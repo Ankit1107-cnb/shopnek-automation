@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on darwin)" generated="2025-05-28T15:42:30.916232" rpa="false" schemaversion="5">
+<suite id="s1" name="loginTest" source="/Users/ankitbajpai/Documents/NekAutomation/Tests/loginTest.robot">
+<test id="s1-t1" name="Address flow" line="30">
+<kw name="Address pop up for the Users" owner="addressKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-28T15:42:31.055328" level="INFO">Clicking element 'xpath = //a[contains(@href, 'cart/address') and text()='Continue to Address']'.</msg>
+<msg time="2025-05-28T15:42:31.056586" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-28T15:42:31.056959" level="FAIL">No browser is open.</msg>
+<arg>${continue_to_address}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-28T15:42:31.055115" elapsed="0.004440">No browser is open.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.059718" elapsed="0.000057"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${closePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.059863" elapsed="0.000035"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.059967" elapsed="0.000031"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${add_new_address}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060071" elapsed="0.000034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060171" elapsed="0.000031"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.history.back();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060270" elapsed="0.000035"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060367" elapsed="0.000030"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${address_popUp_header}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060463" elapsed="0.000030"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${continueToSaveAddress}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060620" elapsed="0.000163"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${saveAddressText}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.060948" elapsed="0.000059"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${outOfStockWarningText}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.061125" elapsed="0.000054"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${closePopUp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.061262" elapsed="0.000036"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-28T15:42:31.061369" elapsed="0.000033"/>
+</kw>
+<status status="FAIL" start="2025-05-28T15:42:31.054564" elapsed="0.006929">No browser is open.</status>
+</kw>
+<kw name="Adding address for Guest User" owner="addressKeywords">
+<status status="NOT RUN" start="2025-05-28T15:42:31.061719" elapsed="0.000077"/>
+</kw>
+<status status="FAIL" start="2025-05-28T15:42:31.054061" elapsed="0.007872">No browser is open.</status>
+</test>
+<status status="FAIL" start="2025-05-28T15:42:30.919025" elapsed="0.143143"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="loginTest" id="s1" pass="0" fail="1" skip="0">loginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
