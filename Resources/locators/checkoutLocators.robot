@@ -29,9 +29,12 @@ ${addSecondaryProduct} =  xpath =  (//button[.//span[text()='Add to Bag']])[5]
 
 ${input_coupon_code} =  xpath =  //label[contains(text(), 'Enter Coupon Code')]/preceding-sibling::input
 ${custom_coupon_apply_cta} =  xpath =  (//button[contains(text(), 'Apply')])[2]
+${noCouponFound} =  xpath =  //p[contains(text(), 'No coupon found')]
+${InvalidCouponToastMessage} =  xpath =  //div[text()='Items are not eligible for the coupon']
 
 ${selected_address} =  xpath =  //input[@type='radio' and @checked]
 ${add_new_address} =  xpath =  //p[normalize-space()='+ Add New Address']
+${add_new_address_heaser} =  xpath =  //p[normalize-space()='Add New Address']
 ${selected_address_header} =  xpath =  //span[normalize-space()='Select Address']
 ${edit_address} =  xpath =  /(//button[text()='Edit'])[1]
 ${remove_address} =  xpath =  (//button[text()='Remove'])[1]   
@@ -45,6 +48,9 @@ ${city_required} =  xpath =  //label[contains(text(), 'City (Required)')]
 ${state_required} =  xpath =  //label[contains(text(), 'State (Required)')]
 ${complete_address} =  xpath =  //lab//label[contains(text(), 'House no.') and contains(text(), 'Required')]
 ${add_user_address} =  xpath =  //textarea[@name='mainAddress']
+
+${invalidPincodeSubtext} =  xpath =  //div[text()="Unfortunately, we don't deliver to your pincode."]
+
 
 
 ${name_required} =  xpath =  //p[text()='Contact Details']/following::input[@name='name'][1]
@@ -103,4 +109,17 @@ ${priceBreakupChevron} =  xpath =  //button//img[@alt='down cheveron']
 ${deliveryAddressChevron} =  xpath =  //img[contains(@alt, 'right chevron icon')]
 ${quantityChevron} =  xpath =  //button[@aria-label='select']
 ${increaseQuantityChevron} =  xpath =  //li[@data-key='2']
+
+#Bottomsheet on going back from checkout page
+
+${discountBottomsheetHeader} =  xpath = //p[contains(text(), "Don’t Lose Your Discount")]
+${discountBottomsheetSubtext} =  xpath = //p[contains(text(), "Big Savings")]
+${savingsNumeric} =  xpath = //div[contains(@class, 'relative')]//div[contains(@class, 'font-extrabold')]//p[2]
+${discountedPriceBottomsheet} =  xpath = //div[contains(@class, 'relative')]//p[3]/span[contains(@class, 'text-semantic-green')]
+${buyNowAndSaveCTA} =  xpath = //p[contains(text(), 'Buy Now & Save')]
+${discountBottomsheetHeaderNoCoupon} =  xpath = //p[contains(text(), "Wait! Don’t Miss Out")]
+${applyCouponButton} =  xpath = //p[contains(text(), "Apply Coupon")]
+
+
+
 

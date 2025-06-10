@@ -11,6 +11,7 @@ Resource    ../Resources/keywords/pdpKeywords.robot
 
 *** Test Cases ***
 
+#payment flow isn't included
 Validate Homepage components
     [Documentation]    Test case to verify homepage components
     Opening In Mobile View

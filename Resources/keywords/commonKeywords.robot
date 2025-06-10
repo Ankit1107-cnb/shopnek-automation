@@ -98,3 +98,5 @@ Search and add to cart
 Sort and filter 
     Wait Until Element Is Visible    ${SORT}
 
+#Sort and compare
+

@@ -9,6 +9,7 @@ Resource    ../Resources/keywords/homepageKeywords.robot
 
 *** Test Cases ***
 
+#homepage validation
 Validate Homepage components
     [Documentation]    Test case to verify homepage components
     Opening In Mobile View

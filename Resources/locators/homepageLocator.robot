@@ -48,7 +48,7 @@ ${shopUnder999} =   xpath =   //img[@alt='shop under 999']
 
 
 
-# ${bracelets} =  xpath =  //a[@href='products?collections=Nek_Bracelets']//span[text()='Bracelets']
+${bracelets} =  xpath =  //a[@href='products?collections=Nek_Bracelets']//span[text()='Bracelets']
 # ${idols_and_frames} =  xpath =   //a[@href='/products?collections=idols_and_frames1']//span[text()='Idols & Frames']
 # ${shubh_coins} =  xpath =  //a[@href='/products?collections=shubh_coins1']//span[text()='Shubh Coins']
 # ${god_pendants} =  xpath =  //a[@href='/products?collections=god_pendants1']//span[text()='God Pendants']

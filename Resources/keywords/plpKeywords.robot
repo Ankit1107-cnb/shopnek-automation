@@ -71,3 +71,4 @@ Click And Wait
 
     Wait Until Element Is Visible    ${wait_element}    timeout=10s
 
+#out of stock product

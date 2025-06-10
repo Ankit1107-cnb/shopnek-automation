@@ -61,7 +61,7 @@ Get Categoriess Titles- Homepage
     Should Be Equal    ${CategoriesName}    ${categoriesText}
 
 Order chains
-    Click Element    ${chains}
+    Click Element    ${earrings}
     Sleep    5s
 
 Order earrings post emptying cart

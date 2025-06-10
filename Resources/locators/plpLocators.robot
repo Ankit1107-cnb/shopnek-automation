@@ -18,3 +18,5 @@ ${price_post_couponDiscount} =  (.//span[contains(text(), 'Buy for ₹')])[1]
 ${applied_filter_pill} =  //a[span[contains(text(), 'Chains')]]
 ${close_pill_icon} =  //div[contains(@class, 'rounded-3xl')]//img[@alt='close' and contains(@class, 'cursor-pointer')]
 ${plp_braker} =  //img[@alt='silver' and contains(@src, '2_breaker.avif')]
+
+#other locators

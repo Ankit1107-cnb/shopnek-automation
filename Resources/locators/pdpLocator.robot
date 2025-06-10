@@ -33,3 +33,5 @@ ${crossIcon_pdp} =  //div[contains(@class, 'justify-end') and contains(@class, '
 
 ${specialOfferUnlocked} =  //span[text()='Special Offer Unlocked!']
 ${closeOfferPopup} =  //div[@role='button' and @aria-label='Close']
+
+#out of stock product

@@ -98,14 +98,45 @@ Check And Verify Order Summary Elements
     # ...    ${platform_discount}
     # ...    ${shipping_charge}
     # Verify Elements Visible From List    @{price_breakdown}
-
-
-    Click Element    ${place_order}
-
 Verify Elements Visible From List
     [Documentation]    Loops through a list of elements and verifies each is visible, logging errors.
     [Arguments]    @{elements}
     FOR    ${element}    IN    @{elements}
         ${status}=    Run Keyword And Return Status    Element Should Be Visible    ${element}
         Run Keyword Unless    ${status}    Log    Element not visible: ${element}    WARN
+    END
+
+Back click Bottomsheet checkout page
+    [Documentation]    Navigates back from the checkout page, bottomsheet appears.
+    Check Exit Checkout Bottomsheeet Header    ${discountBottomsheetHeader}    ${discountBottomsheetHeaderNoCoupon}
+    Wait Until Element Is Visible    ${discountBottomsheetSubtext}
+    Should Be Equal    ${discountBottomsheetSubtext}    ${discountBottomsheetSubtextValue}
+    Wait Until Element Is Visible    ${savingsNumeric}
+    Wait Until Element Is Visible    ${discountedPriceBottomsheet}
+    Wait Until Element Is Visible    ${closePopUp}
+    Click Correct button buy now or apply coupon
+
+
+Click Correct button buy now or apply coupon
+    ${is_button1_present}=    Run Keyword And Return Status    Page Should Contain Element    ${applyCouponButton}
+    Run Keyword If    ${applyCouponButton}    Run Keywords
+    ...    Click Element    ${applyCouponButton}
+    ...    AND    Sleep    2s
+    ...    ELSE
+    ...    Run Keywords
+    ...    Click Element    ${buyNowAndSaveCTA}
+    ...    AND    Sleep    2s
+
+Check Exit Checkout Bottomsheeet Header
+    [Arguments]    ${discountBottomsheetHeader}    ${discountBottomsheetHeaderNoCoupon}
+    ${found}=    Run Keyword And Return Status    Element Should Be Visible    ${discountBottomsheetHeader}    3s
+    
+    IF    ${found}
+        ${header}=    Get Text    ${discountBottomsheetHeader}
+        Log    Found Discount Header: ${header}
+        Should Contain    ${header}    Don’t Lose Your Discount!
+    ELSE
+        ${header}=    Get Text    ${discountBottomsheetHeaderNoCoupon}
+        Log    Found No-Coupon Header: ${header}
+        Should Contain    ${header}    Wait! Don’t Miss Out
     END

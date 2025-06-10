@@ -12,7 +12,7 @@ Resource    ../Resources/keywords/paymentGateway.robot
 
 
 *** Test Cases ***
-
+#end to end test cases
 Validate Homepage components
     [Documentation]    Test case to verify homepage components
     Opening In Mobile View

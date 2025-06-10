@@ -98,3 +98,4 @@ Handle Offer Pop Up If Present
     ${popupVisible}=    Run Keyword And Return Status    Wait Until Element Is Visible    ${closeOfferPopup}    timeout=5s
     Run Keyword If    ${popupVisible}    Offer Pop Up for guest User
 
+#Frequently bought together
