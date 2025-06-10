@@ -11,6 +11,7 @@ Resource   ../../Resources/variables/testData.robot
 *** Keywords ***
 
 Address pop up for the Users
+    Sleep    2s
     Click Element    ${continue_to_address}
     Sleep    2s
     Click Element    ${closePopUp}
@@ -54,6 +55,8 @@ Adding address for Guest User
     # Sleep    5s
     Click Element    ${save_address_cta}
     Sleep    2s
+
+
 
 Continue to Order Summary
     Element Should Be Visible    ${continue_CTA}

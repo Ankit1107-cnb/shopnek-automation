@@ -53,6 +53,16 @@ ${FINISH_FILTER} =    xpath =  //div[@class='relative p-4 cursor-pointer bg-whit
 ${STONE_FILTER} =    xpath =  //div[@class='relative p-4 cursor-pointer bg-white border-t']//span[text()='Stone']
 ${CLOSE_ICON} =    xpath =  //div[contains(@class, 'flex') and contains(@class, 'justify-between')]//img[contains(@alt, 'close')]
 
+${22KTGOLD_FILTER} =    xpath =  //input[@type='checkbox' and @aria-label='22KT Gold']
+${STERLING_SILVER_FILTER} =    xpath =  //input[@type='checkbox' and @aria-label='Sterling Silver']
+
+${APPLY_FILTER} =    xpath =  //button[normalize-space(text())='Apply']
+${NO_PRODUCTS_FOUND} =    xpath =  //h1[normalize-space(text())='No products found']
+${CLEAR_FILTERS} =    xpath =  //button[normalize-space(text())='Clear Filters']
+
+
+
+
 
 #Radio buttons
 ${SORT_LOW_TO_HIGH} =    xpath =  //label[.//span[text()='Price Low to High']]//input[@type='radio']
